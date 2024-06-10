@@ -129,8 +129,10 @@
 }
 .movie-list-item{
     margin-right: 30px;
+    position: relative;
 }
 .movie-list-item-img{
+    transition: all 0.5s ease-in-out;
     width: 270px;
     height: 200px;
     object-fit: cover;
@@ -138,5 +140,26 @@
 
 .movie-list-item:hover .movie-list-item-img{
     transform: scale(1.2);
-    transition: 0.5s;
+    transition: all 0.5s ease-in-out;
+    margin: 0 30px;
+}
+
+.movie-list-item-title{
+    display: transparent;
+    position: absolute;
+    background-color: #333;
+    padding: 0 10px;
+    font-size: 32px;
+    top: 10%;
+    font-weight: bold;
+    left: 35px;
+}
+
+.movie-list-item-desc{
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    font-size: 14px;
+    top: 30%;
+    left: 35px;
 }
